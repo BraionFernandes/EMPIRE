@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Bodoni MT';
-    src: url('../FONTES/Bodoni MT Bold.ttf') format('truetype');
+    src: url('../../FONTES/Bodoni MT Bold.ttf MT Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Copperplate';
-    src: url('../FONTES/copperplate-gothic.otf') format('opentype');
+    src: url('../../FONTES/copperplate-gothic.otf') format('opentype');
 }
 
 :root {
