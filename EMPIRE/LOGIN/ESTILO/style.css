@@ -110,6 +110,10 @@ form > .campo {
     transform: translateY(-11px);
 }
 
+.campo > input:focus-within {
+    background-color: white;
+}
+
 form > input[type=submit] {
     display: block;
     font-size: 1em;
