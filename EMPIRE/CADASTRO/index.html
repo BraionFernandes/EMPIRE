@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../LOGOS/icon-coroa.png" type="image/png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Empire - Cadastro</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <main>
+        <section class="login">
+            <div class="imagem">
+
+            </div>
+            <div class="formulario">
+                <h1 class="formulario-titulo">Cadastro</h1>
+                <h2 class="formulario-subtitulo">Coloque os dados necessários para que possamos criar sua conta.</h2>
+                <form action="cadastro.php" method="post">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="text" name="user" id="iuser" minlength="4" maxlength="20" placeholder="Nome de Usuario" required>
+                        <label for="iuser">Username</label>
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">mail</i>
+                        <input type="email" name="email" id="iemail" placeholder="Email" required>
+                        <label for="iemail">Email</label>
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="isenha" minlength="6" placeholder="Senha" required>
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input class="formulario-botao" type="submit" value="Entrar">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
