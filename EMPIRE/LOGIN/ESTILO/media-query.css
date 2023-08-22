@@ -1,25 +1,5 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'Bodoni MT';
-    src: url('../../FONTES/Bodoni MT Bold.ttf MT Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Copperplate';
-    src: url('../../FONTES/copperplate-gothic.otf') format('opentype');
-}
-
-:root {
-    --cor1: #9e8c6b; /* UM POUCO MAIS ESCURO */
-    --cor2: #a48b5d; /* UM POUCO MAIS CLARO */
-    --cor3: #010030; /* AZUL ESCURO PARA FUNDOS */
-
-    --font-destaque: 'Bodoni MT', 'Times New Roman', serif;
-    --font-rodape:'Copperplate', serif;
-    --font-padrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
     section {

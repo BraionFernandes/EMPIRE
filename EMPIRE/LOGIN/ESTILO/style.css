@@ -1,30 +1,18 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'Bodoni MT';
-    src: url('../../FONTES/Bodoni MT Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Copperplate';
-    src: url('../../FONTES/copperplate-gothic.otf') format('opentype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,700&family=Comfortaa&display=swap');
 
 :root {
-    --cor1: #9e8c6b; /* UM POUCO MAIS ESCURO */
-    --cor2: #a48b5d; /* UM POUCO MAIS CLARO */
-    --cor3: #010030; /* AZUL ESCURO PARA FUNDOS */
-
-    --font-destaque: 'Bodoni MT', 'Times New Roman', serif;
-    --font-rodape:'Copperplate', serif;
-    --font-padrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --cor1: #010030; /* AZUL ESCURO PARA FUNDOS */
+    --font-principal: 'Bricolage Grotesque', sans-serif;
+    --font-destaque: 'Comfortaa', cursive;
 }
 
 * {
-    font-family: var(--font-padrao);
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: var(--font-principal);
 }
 
 body, html {
@@ -57,7 +45,7 @@ section {
 
 #imagem {
     display: block;
-    background: var(--cor3) url(../../LOGOS/empire-logo.png) no-repeat;
+    background: var(--cor1) url(../../LOGOS/empire-logo.png) no-repeat;
     background-size: contain;
     background-position: center center;
     height: 200px;
@@ -99,7 +87,7 @@ form > .campo {
 }
 
 .campo > input {
-    background-color: var(--cor3);
+    background-color: white;
     font-size: 1em;
     width: calc(100% - 45px);
     height: 93%;
@@ -111,7 +99,7 @@ form > .campo {
 }
 
 .campo > input:focus-within {
-    background-color: white;
+    background-color: #eeeeee99;
 }
 
 form > input[type=submit] {
@@ -119,14 +107,14 @@ form > input[type=submit] {
     font-size: 1em;
     width: 100%;
     height: 40px;
-    background-color: var(--cor3);
+    background-color: var(--cor1);
     color: white;
     border: none;
     border-radius: 8px;
 }
 
 form > input[type=submit]:hover {
-    background-color: rgb(73, 73, 73);
+    background-color: #01004b;
 }
 
 form > .botao {
@@ -138,14 +126,14 @@ form > .botao {
     padding-top: 7px;
     margin-top: 5px;
     background-color: white;
-    color: var(--cor3);
-    border: 1px solid var(--cor3);
+    color: var(--cor1);
+    border: 1px solid var(--cor1);
     border-radius: 8px;
     text-decoration: none;
 }
 
 form > .botao:hover {
-    background-color: rgb(73, 73, 73);
+    background-color: #eeeeee75;
 }
 
 form > .botao > i {
