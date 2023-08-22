@@ -1,71 +1,42 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'Bodoni MT';
-    src: url('../../FONTES/Bodoni MT Bold.ttf MT Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Copperplate';
-    src: url('../../FONTES/copperplate-gothic.otf') format('opentype');
-}
-
-:root {
-    --cor1: #9e8c6b; /* UM POUCO MAIS ESCURO */
-    --cor2: #a48b5d; /* UM POUCO MAIS CLARO */
-    --cor3: #010030; /* AZUL ESCURO PARA FUNDOS */
-
-    --font-destaque: 'Bodoni MT', 'Times New Roman', serif;
-    --font-rodape:'Copperplate', serif;
-    --font-padrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .login {
-        width: 80vw;
-        height: 280px;
-    }
-
+@media screen and (max-width: 1200px) {
     .imagem {
-        float: left;
-        width: 30%;
-        height: 100%;
+        display: none;
     }
 
-    .formulario {
-        float: right;
-        width: 70%;
-    }
-
-    .formulario-subtitulo {
-        font-size: 1em;
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    .login {
-        width: 950px;
-        height: 350px;
-    }
-
-    .imagem {
-        float: right;
-        width: 50%;
-        height: 100%;
-    }
-
-    .formulario {
-        float: left;
+    .container {
         width: 50%;
     }
 
-    .formulario-titulo {
-        font-size: 2em;
+    .formulario {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 90%;
+        height: auto;
     }
 
-    .formulario-subtitulo {
-        font-size: 1.2em;
-        margin: 20px 0px;
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+
+    .gender-group {
+        flex-direction: column;
+    }
+
+    .gender-input {
+        margin-top: 0.5rem;
     }
 }
