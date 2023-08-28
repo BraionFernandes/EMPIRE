@@ -15,8 +15,14 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .form-header {
+        display: block;
+    }
+
     .login-botao {
-        padding-left: 10px;
+        padding: 10px;
+        display: block;
+        text-align: right;
     }
 
     .container {
