@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 1000px) {
     .login-botao {
-        margin-left: 10px;
+        padding-left: 10px;
     }
 
     .container {
