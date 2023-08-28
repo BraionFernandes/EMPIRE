@@ -45,7 +45,7 @@ section {
 
 #imagem {
     display: block;
-    background: var(--cor1) url(../../LOGOS/empire-logo.png) no-repeat;
+    background: var(--cor1) url(../IMAGENS/empire-logo.png) no-repeat;
     background-size: contain;
     background-position: center center;
     height: 200px;
