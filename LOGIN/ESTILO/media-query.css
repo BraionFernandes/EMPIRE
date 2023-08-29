@@ -22,18 +22,18 @@
 @media screen and (min-width: 992px) {
 
     section {
-        width: 950px;
-        height: 350px;
+        width: 80%;
+        height: 90vh;
     }
 
     #imagem {
-        float: right;
+        float: left;
         width: 50%;
         height: 100%;
     }
 
     #formulario {
-        float: left;
+        float: right;
         width: 50%;
     }
 
@@ -44,5 +44,9 @@
     #formulario > p {
         font-size: 1.2em;
         margin: 20px 0px;
+    }
+
+    form > input[type=submit] {
+        margin-top: 30px;
     }
 }
