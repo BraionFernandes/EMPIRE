@@ -22,6 +22,7 @@
     align-items: flex-end;
     justify-content: space-around;
     padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
 }
 
 .cabecalho-imagem {
@@ -107,6 +108,10 @@
     font-weight: lighter;
 }
 
+.lancamento {
+    margin-bottom: 30px;
+}
+
 .lancamento-titulo {
     margin: auto;
     font-size: 1.2em;
@@ -117,6 +122,7 @@
 .lancamento-tabela {
     border-collapse: collapse;
     margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
 }
 
 .lancamento-tabela-subtitulo {
@@ -125,7 +131,127 @@
 }
 
 td, th {
+    color: white;
+    background-color: rgb(32, 32, 32);
     border: 1px solid black;
     padding: 5px;
     text-align: center;
+}
+
+.guia {
+    
+}
+
+.guia-titulo {
+    margin: auto;
+    font-size: 1.2em;
+    border-left: 3px solid var(--cor2);
+    padding-left: 5px;
+}
+
+.guia-mobile {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    background-color: var(--cor1);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+}
+
+.guia-lista-titulo {
+    font-size: 1.8em;
+    color: white;
+}
+
+.guia-lista {
+    list-style: none;
+}
+
+.guia-lista-item {
+    font-size: 1.4em;
+    color: white;
+    padding: 5px 0px;
+}
+
+.guia-botao {
+    background-color: var(--cor2);
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+}
+
+.guia-botao:hover {
+    background-color: #e4b534c4;
+}
+
+.guia-botao > a {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.guia-pc {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    background-color: var(--cor1);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(68.15deg, #010030, #010060);
+    padding: 30px;
+}
+
+.rodape-imagem-item {
+    width: 300px;
+}
+
+.rodape-descricao-titulo {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.descricao-nav {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao-nav-item {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 3px 0;
+}
+
+.descricao-nav-item:hover {
+    color: rgba(255, 255, 255, 0.788);
+}
+
+.rodape-nav {
+    margin-right: 20px;
+}
+
+.rodape-nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 0 3px;
+}
+
+.rodape-nav-item:hover {
+    color: rgba(255, 255, 255, 0.788);
 }
