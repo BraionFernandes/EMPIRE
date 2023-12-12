@@ -13,6 +13,11 @@
     --fonte-padrao: 'Open Sans', sans-serif;
 }
 .cabecalho{
+    position: fixed;
+    z-index: 20000;
+    top: 0;
+    right: 0;
+    left: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -69,7 +74,7 @@
 }
 .cabecalho-search{
     background-color: white;
-    color: white;
+    color: black;
     border: none;
     outline: none;
 }
@@ -77,11 +82,17 @@
     width: 25px;
     cursor: pointer;
 }
+.conteudo-news-artigo-topo{
+    padding-top: 80px;
+}
 .conteudo-news-artigo-topo, .artigo-topo{
     margin: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-style: italic;
+    font-weight: 800;
+    color: #32C8FF;
 }
 .conteudo-news-artigo-topo-titulo, .titulo-conteudo{
     font-size: 1.7em;
@@ -108,6 +119,10 @@
     width: 350px;
     height: 350px;
     transition: 500ms;
+}
+.conteudo-news-artigo-div > a{
+    text-decoration: none;
+    color: black;
 }
 .conteudo-news-artigo-image{
     width: 100%;
@@ -165,12 +180,14 @@
     flex-wrap: wrap;
     margin-top: 50px;
     margin: 20px auto;
+    margin-bottom: 40px;
 }
 .conteudo-build-champ-item{
     width: 130px;
     overflow: hidden;
     margin: 5px;
     position: relative;
+    cursor: pointer;
 }
 .conteudo-build-champ-item > img{
     width: 100%;
@@ -193,4 +210,46 @@
     font-weight: 900;
     font-style: italic;
     background: #17357e;
+}
+.rodape{
+    background-color: rgb(68, 68, 68);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.rodape-menu1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.rodape-menu1-item{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    padding: 5px;
+    transition: 500ms;
+}
+.rodape-menu1-item:hover{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+.rodape-logo{
+    width: 300px;
+}
+.rodape-menu2{
+    display: flex;
+    justify-content: space-around;
+}
+.rodape-menu2-item{
+    width: 50px;
+    padding: 3px;
+    transition: 300ms;
+}
+.rodape-menu2-item:hover{
+    width: 60px;
+}
+.OFF{
+    display: none;
 }
