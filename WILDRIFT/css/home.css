@@ -22,7 +22,6 @@
     justify-content: space-around;
     align-items: center;
     background-color: black;
-    /*background: linear-gradient(to bottom, #17347D, #56B1E8);*/
     padding: 10px;
     box-shadow: 1px 3px 11px rgba(0, 0, 0, 0.479);
 }
@@ -45,6 +44,10 @@
 .menu>li{
     list-style-type: none;
     padding: 0px 16px;
+    border-bottom: 3px solid black;
+}
+.menu>li:hover{
+    border-bottom: 3px solid #32C8FF;
 }
 .menu>li>a{
     line-height: 65px;
