@@ -12,6 +12,7 @@ const ADC=document.querySelectorAll(".ADC");
 const SUP=document.querySelectorAll(".SUP");
 const btnRotas=document.querySelectorAll(".conteudo-build-artigo-item");
 const divChamp=document.querySelector(".conteudo-build-champ");
+const btnMenu=document.querySelector(".cabecalho-menu-button");
 
 rotaAll.addEventListener("click",()=>{
     btnRotas.forEach(el=>{
@@ -74,4 +75,8 @@ rotaSup.addEventListener("click",()=>{
     SUP.forEach(el=>{
         divChamp.appendChild(el)
     })
+})
+btnMenu.addEventListener("click",()=>{
+    const menuDiv=document.querySelector(".mobile-menu-div");
+    menuDiv.classList.toggle("ON")
 })

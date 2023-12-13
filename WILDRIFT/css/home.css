@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color: rgb(32, 32, 32);
     padding: 10px;
     box-shadow: 1px 3px 11px rgba(0, 0, 0, 0.479);
 }
@@ -30,8 +30,36 @@
 }
 .cabecalho-menu-button{
     border: none;
-    width: 30px;
+    width: 40px;
     height: 30px;
+}
+.mobile-menu-div{
+    display: none;
+    position: fixed;
+    z-index: 20000;
+    top: 75px;
+    right: 0;
+    left: 0;
+    background-color: rgb(32, 32, 32);
+    width: 200px;
+    height: 150px;
+}
+.mobile-menu{
+    text-align: center;
+}
+.mobile-menu>li{
+    padding: 5px;
+}
+.mobile-menu>li>a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 300ms;
+}
+.mobile-menu>li>a:hover{
+    background-color: white;
+    color: black;
 }
 .cabecalho-logo{
     width: 200px;
@@ -44,7 +72,7 @@
 .menu>li{
     list-style-type: none;
     padding: 0px 16px;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(32, 32, 32);
 }
 .menu>li:hover{
     border-bottom: 3px solid #32C8FF;
@@ -62,11 +90,6 @@
 .menu>li>a:hover{
     background-color: gray;
     border-radius: 5px;
-}
-.cabecalho-mode{
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
 }
 .cabecalho-search-div{
     display: flex;
@@ -103,7 +126,7 @@
     font-style: italic;
     margin: 20px 50px;
 }
-.conteudo-news-artigo-topo-link{
+.conteudo-news-artigo-topo-link, .conteudo-news-artigo-topo-link-2{
     text-decoration: none;
     font-style: italic;
     font-weight: 800;
@@ -111,7 +134,10 @@
     margin-right: 20px;
     transition: 300ms;
 }
-.conteudo-news-artigo-topo-link:hover{
+.conteudo-news-artigo-topo-link-2{
+    display: none;
+}
+.conteudo-news-artigo-topo-link:hover, .conteudo-news-artigo-topo-link-2:hover{
     color: gray;
 }
 .conteudo-news-artigo{
@@ -152,6 +178,7 @@
     gap: 15px;
     justify-content: center;
     margin: 40px auto;
+    flex-wrap: wrap;
 }
 .conteudo-build-artigo-item{
     display: flex;
@@ -255,4 +282,7 @@
 }
 .OFF{
     display: none;
+}
+.ON{
+    display: block;
 }
