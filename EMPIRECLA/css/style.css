@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --font-padrao:'Roboto', sans-serif;
+    --font-destaque:'Bebas Neue', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-padrao);
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 9px;
+}
+.picture-logo-item{
+    width: 170px;
+}
+.header-nav-lista{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+.header-nav-lista-item{
+    display: flex;
+    flex-direction: column;
+}
+.header-nav-lista-item, .header-nav-lista-item a{
+    font-size: 1.07em;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+.header-nav-lista-item::after{
+    content: '';
+    width: auto;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #000;
+    margin-top: 5px;
+    transition: 300ms;
+}
+.header-nav-lista-item:hover::after{
+    background-color: #E2B532;
+}
+.button-entrar{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #E2B532;
+    cursor: pointer;
+}
+.button-entrar:hover{
+    color: #fff;
+    background-color: #caa32c;
+}
