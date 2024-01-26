@@ -15,14 +15,32 @@
 }
 
 .header{
-    background-color: #000;
+    display: block;
+    width: 100vw;
+    height: 500px;
+}
+.header-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20000;
+    background-color: transparent;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 9px;
+    padding: 5px;
+}
+.picture-logo{
+    width: 150px;
 }
 .picture-logo-item{
-    width: 170px;
+    width: 100%;
+    padding: 5px;
+}
+.header-nav{
+    display: flex;
+    gap: 1.5rem;
 }
 .header-nav-lista{
     list-style-type: none;
@@ -32,24 +50,18 @@
 .header-nav-lista-item{
     display: flex;
     flex-direction: column;
+    padding: 5px;
 }
 .header-nav-lista-item, .header-nav-lista-item a{
-    font-size: 1.07em;
+    font-size: 1em;
+    font-weight: normal;
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
-}
-.header-nav-lista-item::after{
-    content: '';
-    width: auto;
-    height: 4px;
-    border-radius: 5px;
-    background-color: #000;
-    margin-top: 5px;
     transition: 300ms;
 }
-.header-nav-lista-item:hover::after{
-    background-color: #E2B532;
+.header-nav-lista-item a:hover{
+    color: #E2B532;
 }
 .button-entrar{
     width: 100px;
@@ -65,4 +77,62 @@
 .button-entrar:hover{
     color: #fff;
     background-color: #caa32c;
+}
+.section-picture{
+    display: block;
+    position: absolute;
+    background: url(../img/logo/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 500px;
+}
+.section-span{
+    position: relative;
+    top: 10rem;
+    left: 5rem;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 5em;
+    font-weight: 600;
+    padding: 0 50px;
+    animation: displayText 3s infinite;
+}
+.section-span::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #caa32c;
+    overflow: hidden;
+    border-right: 3px solid #caa32c;
+    filter: drop-shadow(0 0 5px #caa32c) drop-shadow(0 0 25px #caa32c);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes displayText{
+    0% {
+        display: inline-block;
+    }
+    100% {
+        display: none;
+    }
+}
+
+@keyframes animate{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 74%;
+    }
+}
+.section-p{
+    width: 400px;
+    position: relative;
+    top: 4rem;
+    right: -55rem;
+    font-size: 2em;
+    color: #ffffffe0;
+}
+.section-info{
+
 }
